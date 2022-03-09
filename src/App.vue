@@ -1,8 +1,24 @@
 <template>
   <div id="app">
+    <header-nav></header-nav>
     <router-view />
+    <footer-nav></footer-nav>
   </div>
 </template>
+
+<script>
+import HeaderNav from './components/header.vue'
+import FooterNav from './components/footerNav.vue'
+
+export default {
+  // eslint-disable-next-line vue/multi-word-component-names
+  name: "App",
+  components: {
+    HeaderNav,
+    FooterNav
+  },
+};
+</script>
 
 <style lang="scss">
 #app {

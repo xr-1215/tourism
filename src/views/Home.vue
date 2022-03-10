@@ -451,10 +451,10 @@
       </div>
     </div>
     <div class="advert">
-      <img src="../../public/img/gao1.jpg" alt="">
-      <img src="../../public/img/gao2.jpg" alt="">
-      <img src="../../public/img/gao3.jpg" alt="">
-      <img src="../../public/img/gao4.jpg" alt="">
+      <img src="../../public/img/gao1.jpg" alt="" class="cup" />
+      <img src="../../public/img/gao2.jpg" alt="" class="cup" />
+      <img src="../../public/img/gao3.jpg" alt="" class="cup" />
+      <img src="../../public/img/gao4.jpg" alt="" class="cup" />
     </div>
   </div>
 </template>
@@ -611,10 +611,10 @@ export default {
         price6: "4580",
         price7: "3880",
         price8: "1215",
-        price9:"399",
-        price10:"422",
-        price11:"655",
-        price12:"777"
+        price9: "399",
+        price10: "422",
+        price11: "655",
+        price12: "777",
       },
       addressList: {
         address1: "北京",
@@ -655,6 +655,7 @@ export default {
       display: flex;
     }
     .leftImg {
+      cursor: pointer;
       float: left;
       .topTit {
         width: 210px;
@@ -689,13 +690,16 @@ export default {
       height: 360px;
     }
   }
-  .advert{
+  .advert {
     width: 1200px;
     margin: 0 auto 20px;
     display: flex;
-    img{
+    img {
       margin-right: 22px;
     }
   }
+}
+.cup {
+  cursor: pointer;
 }
 </style>

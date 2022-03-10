@@ -60,6 +60,7 @@ export default {
   height: 300px;
   border: 1px solid #ddd;
   margin: 2px 4px 5px 4px;
+  cursor: pointer;
   .top {
     width: 232px;
     height: 180px;

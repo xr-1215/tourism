@@ -2,7 +2,7 @@
   <div id="app">
     <header-nav></header-nav>
     <router-view />
-    <footer-nav></footer-nav>
+    <footer-nav v-if="!$route.meta.isHideFooter"></footer-nav>
   </div>
 </template>
 

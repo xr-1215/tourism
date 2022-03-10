@@ -1,6 +1,6 @@
 <template>
   <div class="searchContent">
-    <div class="leftImg">
+    <div class="leftImg" @click="toHome">
       <img src="../../public/img/feiji.jpeg" alt="" />
     </div>
     <div class="search">
@@ -43,11 +43,18 @@ export default {
       input: "",
     };
   },
+  methods:{
+    //去首页
+    toHome(){
+      this.$router.push("/")
+    }
+  },
 };
 </script>
 
 <style scoped lang='scss'>
 .searchContent {
+  cursor: pointer;
   width: 1200px;
   margin: 0 auto;
   height: 100px;

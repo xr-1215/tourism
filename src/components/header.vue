@@ -27,8 +27,8 @@
         </div>
       </div>
       <div class="rightContent">
-        <div class="login">你好 , 请登录</div>
-        <div class="enroll">免费注册</div>
+        <div class="login" @click="toLogin">你好 , 请登录</div>
+        <div class="enroll" @click="toRegister">免费注册</div>
         <div class="vert"></div>
         <div class="news">
           <i class="iconfont icon-youjian"></i>
@@ -98,15 +98,21 @@
         <div class="service">客服中心</div>
         <div class="vert"></div>
         <div class="service iconfont icon-shouji"></div>
-        <div class="service iconfont icon-weixin" style="margin-left:20px"></div>
+        <div
+          class="service iconfont icon-weixin"
+          style="margin-left: 20px"
+        ></div>
       </div>
     </div>
+    <SearchContent></SearchContent>
   </div>
 </template>
 
 <script>
+import SearchContent from "../components/searchContent.vue";
 export default {
   name: "HeaderNav",
+  components: { SearchContent },
   data() {
     return {
       city: "山西省",
@@ -151,6 +157,14 @@ export default {
   methods: {
     changeCity(val) {
       this.city = val;
+    },
+    //去登陆
+    toLogin() {
+      this.$router.push("/login");
+    },
+    //去注册
+    toRegister() {
+      this.$router.push("/register");
     },
   },
 };

@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <SearchContent></SearchContent>
+
     <NavBar></NavBar>
     <div class="slideshow">
       <el-carousel>
@@ -463,14 +463,13 @@
 import ImgShow from "../components/imgShow.vue";
 import ImgTab from "../components/imgTab.vue";
 import NavBar from "../components/navBar.vue";
-import SearchContent from "../components/searchContent.vue";
+
 
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
   name: "Home",
   components: {
     NavBar,
-    SearchContent,
     ImgShow,
     ImgTab,
   },
